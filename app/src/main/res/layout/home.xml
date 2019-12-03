@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/etUN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/urbana_north" />
+
+    <TextView
+        android:id="@+id/dUN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/allen_busey_evans_isr_lar" />
+
+    <TextView
+        android:id="@+id/etUS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/urbana_south" />
+
+    <TextView
+        android:id="@+id/dUS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/far_par" />
+
+    <TextView
+        android:id="@+id/etIKE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ikenberry_commons" />
+
+    <EditText
+        android:id="@+id/dIke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ikenberry_commons"
+        android:inputType="textPersonName"
+        android:text="@string/barton_lundgren_hopkins_nugent_wassaja_weston_scott_snyder_taft_van_doren"
+        tools:targetApi="o" />
+</LinearLayout>

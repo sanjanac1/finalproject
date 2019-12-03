@@ -1,3 +1,5 @@
+package com.example.finalproject;
+
 /** Updates and holds each users information */
 public class User {
     private String name;
@@ -5,10 +7,10 @@ public class User {
     private String grade;
     private String major;
     private String gender;
-    public User(String n, int a, String g, String gend) {
-        name = n;
-        age = a;
-        grade = g;
-        gender = gend;
+    private String accUser;
+    private String accPass;
+    public User(String u, String p) {
+        accUser = u;
+        accPass = p;
     }
 }
