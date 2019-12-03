@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
                 openNewAccountActivity();
             }
         });
-        logIn = findViewById(R.id.logIn);
+        logIn = findViewById(R.id.logIn1);
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
