@@ -12,46 +12,38 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /** Login Screen Activity and creating new user account */
 public class LoginActivity extends AppCompatActivity {
-    private Button createAccount;
-    private Button logIn;
+    private EditText username;
+    private EditText password;
+    private Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.firstpage);
+        setContentView(R.layout.login_screen);
 
 
-        createAccount = findViewById(R.id.createAccount);
-        createAccount.setOnClickListener(new View.OnClickListener() {
+        username = findViewById(R.id.userName);
+        password = findViewById(R.id.passWord);
+        login = findViewById(R.id.loginButton);
+
+
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewAccountActivity();
+                validate(username.getText().toString(), password.getText().toString());
+
             }
         });
-        logIn = findViewById(R.id.logIn1);
-        logIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity();
-            }
-        });
-    }
-
-
-    public void openNewAccountActivity() {
-        Intent intent = new Intent(LoginActivity.this, NewAccountActivity.class);
-        startActivity(intent);
-
-    }
-    public void openMainActivity() {
-        Intent intent2 = new Intent(LoginActivity.this, MainActivity.class);
-        startActivity(intent2);
 
     }
 
+    private void validate(String user, String pass) {
+        if (user.equals("Sanjana") && pass.equals("Shivani")) {
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            setContentView(R.layout.calendar);
+        }
 
 
-
-
-
+    }
 }
