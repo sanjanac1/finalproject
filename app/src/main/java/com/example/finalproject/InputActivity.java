@@ -31,6 +31,6 @@ public class InputActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-        setContentView(R.layout.calendar);
+        //setContentView(R.layout.calendar);
     }
 }

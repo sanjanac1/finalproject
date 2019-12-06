@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         if (user.equals("Sanjana") && pass.equals("Shivani")) {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
-            setContentView(R.layout.calendar);
+
         }
 
 
