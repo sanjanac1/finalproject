@@ -1,8 +1,8 @@
 package com.example.finalproject;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.media.MediaPlayer;
 
@@ -17,6 +17,8 @@ public class InputActivity extends AppCompatActivity {
     private ImageButton productiveButton;
     private ImageButton sadButton;
     private ImageButton calmButton;
+    private Button pause;
+    private Button back;
     MediaPlayer song;
 
     @Override
@@ -32,6 +34,9 @@ public class InputActivity extends AppCompatActivity {
         productiveButton = findViewById(R.id.btnProductive);
         sadButton = findViewById(R.id.btnSad);
         calmButton = findViewById(R.id.btnCalm);
+        pause = findViewById(R.id.pauseCalm);
+        back = findViewById(R.id.backCalm);
+
 
 
         happyButton.setOnClickListener(new View.OnClickListener() {
