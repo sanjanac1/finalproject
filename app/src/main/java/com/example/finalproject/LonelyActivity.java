@@ -1,4 +1,8 @@
 package com.example.finalproject;
 
-public class LonelyActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class LonelyActivity extends AppCompatActivity {
+
+
 }
