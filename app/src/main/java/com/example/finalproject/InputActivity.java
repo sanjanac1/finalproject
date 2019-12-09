@@ -19,6 +19,7 @@ public class InputActivity extends AppCompatActivity {
     private ImageButton productiveButton;
     private ImageButton sadButton;
     private ImageButton calmButton;
+    /**
     private Button pauseHappy;
     private Button backHappy;
     private Button pauseAngry;
@@ -37,6 +38,7 @@ public class InputActivity extends AppCompatActivity {
     private Button backLonely;
 
     MediaPlayer song;
+     **/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class InputActivity extends AppCompatActivity {
         sadButton = findViewById(R.id.btnSad);
         calmButton = findViewById(R.id.btnCalm);
 
+        /**
         pauseHappy = findViewById(R.id.pshappy);
         backHappy = findViewById(R.id.backHapy);
         pauseAngry = findViewById(R.id.psangry);
@@ -68,6 +71,7 @@ public class InputActivity extends AppCompatActivity {
         backSleepy = findViewById(R.id.backSleepy);
         pauseLonely = findViewById(R.id.pslonely);
         backLonely = findViewById(R.id.backLonely);
+         **/
 
 
 
@@ -75,238 +79,58 @@ public class InputActivity extends AppCompatActivity {
         happyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.happy);
-                song = MediaPlayer.create(InputActivity.this, R.raw.happysong);
-                song.start();
-                pauseHappy.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                backHappy.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
-
+                Intent intent = new Intent(InputActivity.this, HappyActivity.class);
+                startActivity(intent);
             }
         });
 
         angryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.angry);
-                song = MediaPlayer.create(InputActivity.this, R.raw.angrysong);
-                song.start();
-                pauseAngry.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                backAngry.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
+                Intent intent = new Intent(InputActivity.this, AngryActivity.class);
+                startActivity(intent);
             }
         });
         energyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.energetic);
-                song = MediaPlayer.create(InputActivity.this, R.raw.energysong);
-                song.start();
-                pauseEnergy.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                backEnergy.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
+                Intent intent = new Intent(InputActivity.this, EnergeticActivity.class);
+                startActivity(intent);
             }
         });
         lonelyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.lonely);
-                song = MediaPlayer.create(InputActivity.this, R.raw.lonelysong);
-                song.start();
-                pauseLonely.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                backLonely.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
+                Intent intent = new Intent(InputActivity.this, LonelyActivity.class);
+                startActivity(intent);
             }
         });
         sleepyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.sleepy);
-                song = MediaPlayer.create(InputActivity.this, R.raw.sleepysong);
-                song.start();
-                pauseSleepy.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                backSleepy.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
+                Intent intent = new Intent(InputActivity.this, SleepyActivity.class);
+                startActivity(intent);
             }
         });
         productiveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.productive);
-                song = MediaPlayer.create(InputActivity.this, R.raw.productivesong);
-                song.start();
-                pauseProductive.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                pauseProductive.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
-
+                Intent intent = new Intent(InputActivity.this, ProductiveActivity.class);
+                startActivity(intent);
             }
         });
         sadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.sad);
-                song = MediaPlayer.create(InputActivity.this, R.raw.sadsong);
-                song.start();
-                pauseSad.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                backSad.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
-
+                Intent intent = new Intent(InputActivity.this, SadActivity.class);
+                startActivity(intent);
             }
         });
         calmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calm);
-                song = MediaPlayer.create(InputActivity.this, R.raw.calmsong);
-                song.start();
-                pauseCalm.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (song.isPlaying()) {
-                            song.pause();
-                        } else {
-                            song.start();
-                        }
-
-                    }
-                });
-                backCalm.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        song.stop();
-                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                        startActivity(intent);
-
-                    }
-                });
-
-
+                Intent intent = new Intent(InputActivity.this, CalmActivity.class);
+                startActivity(intent);
             }
         });
 
