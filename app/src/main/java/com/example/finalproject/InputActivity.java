@@ -3,9 +3,8 @@ package com.example.finalproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.graphics.Rect;
+import android.media.MediaPlayer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +17,7 @@ public class InputActivity extends AppCompatActivity {
     private ImageButton productiveButton;
     private ImageButton sadButton;
     private ImageButton calmButton;
+    MediaPlayer song;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,55 +37,73 @@ public class InputActivity extends AppCompatActivity {
         happyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.happy);
+                song = MediaPlayer.create(InputActivity.this, R.raw.happysong);
+                song.start();
+
             }
         });
 
         angryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.angry);
+                song = MediaPlayer.create(InputActivity.this, R.raw.angrysong);
+                song.start();
             }
         });
         energyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.energetic);
+                song = MediaPlayer.create(InputActivity.this, R.raw.energysong);
+                song.start();
             }
         });
         lonelyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.lonely);
+                song = MediaPlayer.create(InputActivity.this, R.raw.lonelysong);
+                song.start();
             }
         });
         sleepyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.sleepy);
+                song = MediaPlayer.create(InputActivity.this, R.raw.sleepysong);
+                song.start();
             }
         });
         productiveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.productive);
+                song = MediaPlayer.create(InputActivity.this, R.raw.productivesong);
+                song.start();
             }
         });
         sadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.sad);
+                song = MediaPlayer.create(InputActivity.this, R.raw.sadsong);
+                song.start();
             }
         });
         calmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.calendar);
+                setContentView(R.layout.calm);
+                song = MediaPlayer.create(InputActivity.this, R.raw.calmsong);
+                song.start();
             }
         });
 
 
     }
+
 }
 
 
