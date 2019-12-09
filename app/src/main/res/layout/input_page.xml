@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/btnStressed"
+        app:layout_constraintBottom_toTopOf="@+id/btnLonely"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSad"
         app:srcCompat="@android:color/holo_purple" />
@@ -34,7 +34,7 @@
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/textStressed"
+        app:layout_constraintBottom_toTopOf="@+id/textLonely"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHappy"
         app:layout_constraintTop_toBottomOf="@+id/textSad" />
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textCalm" />
 
     <ImageButton
-        android:id="@+id/btnEnvious"
+        android:id="@+id/btnSleepy"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="58dp"
@@ -87,7 +87,7 @@
         app:srcCompat="@color/colorPrimaryDark" />
 
     <TextView
-        android:id="@+id/textEnvious"
+        android:id="@+id/textSleepy"
         android:layout_width="81dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
@@ -96,17 +96,17 @@
         android:layout_marginEnd="223dp"
         android:layout_marginRight="223dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/envious"
+        android:text="@string/sleepy"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textCalm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnEnvious"
+        app:layout_constraintStart_toEndOf="@+id/btnSleepy"
         app:layout_constraintTop_toBottomOf="@+id/textProductive" />
 
     <ImageButton
-        android:id="@+id/btnStressed"
+        android:id="@+id/btnLonely"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="58dp"
@@ -120,7 +120,7 @@
         app:srcCompat="@android:color/black" />
 
     <TextView
-        android:id="@+id/textStressed"
+        android:id="@+id/textLonely"
         android:layout_width="81dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
@@ -129,13 +129,13 @@
         android:layout_marginEnd="223dp"
         android:layout_marginRight="223dp"
         android:layout_marginBottom="60dp"
-        android:text="@string/stressed"
+        android:text="@string/lonely"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnStressed"
+        app:layout_constraintStart_toEndOf="@+id/btnLonely"
         app:layout_constraintTop_toBottomOf="@+id/textHappy" />
 
     <ImageButton
@@ -147,7 +147,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnvious"
+        app:layout_constraintBottom_toTopOf="@+id/btnSleepy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEnergetic"
         app:srcCompat="@color/colorAccent" />
@@ -166,7 +166,7 @@
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/textEnvious"
+        app:layout_constraintBottom_toTopOf="@+id/textSleepy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnProductive"
         app:layout_constraintTop_toBottomOf="@+id/textEnergetic" />
@@ -250,7 +250,7 @@
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/btnSad"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEnvious"
+        app:layout_constraintTop_toBottomOf="@+id/btnSleepy"
         app:srcCompat="@color/design_default_color_primary" />
 
     <TextView
@@ -270,7 +270,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textSad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnCalm"
-        app:layout_constraintTop_toBottomOf="@+id/textEnvious" />
+        app:layout_constraintTop_toBottomOf="@+id/textSleepy" />
 
     <TextView
         android:id="@+id/txtHeader"

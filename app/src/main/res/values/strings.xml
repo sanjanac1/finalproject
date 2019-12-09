@@ -18,4 +18,8 @@
     <string name="productive">Productive</string>
     <string name="energetic">Energetic</string>
     <string name="calm">Calm</string>
+    <string name="sleepy">Sleepy</string>
+    <string name="lonely">Lonely</string>
+    <string name="pause">PAUSE</string>
+    <string name="back">BACK</string>
 </resources>
