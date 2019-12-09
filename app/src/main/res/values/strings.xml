@@ -9,4 +9,13 @@
     <string name="logged_in">Logged In</string>
     <string name="happy">Happy</string>
     <string name="todo">TODO</string>
+    <string name="calendar_pic">calendar pic</string>
+    <string name="how_do_you_feel_today">How do you feel today?</string>
+    <string name="sad">sad</string>
+    <string name="angry">Angry</string>
+    <string name="envious">Envious</string>
+    <string name="stressed">Stressed</string>
+    <string name="productive">Productive</string>
+    <string name="energetic">Energetic</string>
+    <string name="calm">Calm</string>
 </resources>

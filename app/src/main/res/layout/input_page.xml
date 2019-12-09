@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnStressed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSad"
-        app:srcCompat="#FF0072" />
+        app:srcCompat="@android:color/holo_purple" />
 
     <TextView
         android:id="@+id/textHappy"
@@ -31,7 +31,7 @@
         android:layout_marginRight="222dp"
         android:layout_marginBottom="10dp"
         android:text="@string/happy"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textStressed"
@@ -64,7 +64,7 @@
         android:layout_marginRight="223dp"
         android:layout_marginBottom="10dp"
         android:text="@string/sad"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textHappy"
@@ -97,7 +97,7 @@
         android:layout_marginRight="223dp"
         android:layout_marginBottom="10dp"
         android:text="@string/envious"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textCalm"
@@ -130,7 +130,7 @@
         android:layout_marginRight="223dp"
         android:layout_marginBottom="60dp"
         android:text="@string/stressed"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -163,7 +163,7 @@
         android:layout_marginRight="223dp"
         android:layout_marginBottom="10dp"
         android:text="@string/productive"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textEnvious"
@@ -183,7 +183,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnProductive"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAngry"
-        app:srcCompat="#FF7300" />
+        app:srcCompat="@android:color/holo_orange_dark" />
 
     <TextView
         android:id="@+id/textEnergetic"
@@ -196,7 +196,7 @@
         android:layout_marginRight="223dp"
         android:layout_marginBottom="10dp"
         android:text="@string/energetic"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textProductive"
@@ -218,7 +218,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtHeader"
         app:layout_constraintVertical_bias="0.42000002"
-        app:srcCompat="#FF0000" />
+        app:srcCompat="@android:color/holo_red_dark" />
 
     <TextView
         android:id="@+id/textAngry"
@@ -231,7 +231,7 @@
         android:layout_marginRight="222dp"
         android:layout_marginBottom="10dp"
         android:text="@string/angry"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textEnergetic"
@@ -251,7 +251,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEnvious"
-        app:srcCompat="#007BFF" />
+        app:srcCompat="@color/design_default_color_primary" />
 
     <TextView
         android:id="@+id/textCalm"
@@ -264,7 +264,7 @@
         android:layout_marginRight="223dp"
         android:layout_marginBottom="10dp"
         android:text="@string/calm"
-        android:textColor="#00FF0000"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textSad"
@@ -281,8 +281,8 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="176dp"
         android:layout_marginRight="176dp"
-        android:text="@string/How do you feel today?"
-        android:textColor="#0BE4D0"
+        android:text="@string/how_do_you_feel_today"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="18sp"
         android:textStyle="italic"
         app:fontFamily="sans-serif-condensed"

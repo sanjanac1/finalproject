@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void validate(String user, String pass) {
         if (user.equals("Sanjana") && pass.equals("Shivani")) {
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this, InputActivity.class);
             startActivity(intent);
 
         }

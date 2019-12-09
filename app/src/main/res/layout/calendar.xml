@@ -6,24 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/grid"
-        android:layout_width="319dp"
-        android:layout_height="562dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginLeft="46dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginRight="46dp"
-        android:layout_marginBottom="50dp"
-        app:columnCount="13"
-        app:rowOrderPreserved="true"
-        app:columnOrderPreserved="true"
+    <ImageView
+        android:id="@+id/gridPic"
+        android:layout_width="330dp"
+        android:layout_height="642dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/calendar_pic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:rowCount="32">
-
-    </androidx.gridlayout.widget.GridLayout>
+        app:srcCompat="@drawable/calendarpic" />
 </androidx.constraintlayout.widget.ConstraintLayout>

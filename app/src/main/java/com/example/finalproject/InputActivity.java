@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.graphics.Rect;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,8 +30,9 @@ public class InputActivity extends AppCompatActivity {
 
     private void fillInGrid() {
 
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        //setContentView(R.layout.calendar);
+        //Intent intent = new Intent(this, MainActivity.class);
+
+        //startActivity(intent);
+        setContentView(R.layout.calendar);
     }
 }
