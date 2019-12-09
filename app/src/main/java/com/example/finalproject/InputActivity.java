@@ -1,6 +1,8 @@
 package com.example.finalproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.renderscript.ScriptGroup;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -17,8 +19,7 @@ public class InputActivity extends AppCompatActivity {
     private ImageButton productiveButton;
     private ImageButton sadButton;
     private ImageButton calmButton;
-    private Button pause;
-    private Button back;
+
     MediaPlayer song;
 
     @Override
@@ -34,8 +35,7 @@ public class InputActivity extends AppCompatActivity {
         productiveButton = findViewById(R.id.btnProductive);
         sadButton = findViewById(R.id.btnSad);
         calmButton = findViewById(R.id.btnCalm);
-        pause = findViewById(R.id.pauseCalm);
-        back = findViewById(R.id.backCalm);
+
 
 
 
@@ -45,6 +45,7 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.happy);
                 song = MediaPlayer.create(InputActivity.this, R.raw.happysong);
                 song.start();
+                swap();
 
             }
         });
@@ -55,6 +56,7 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.angry);
                 song = MediaPlayer.create(InputActivity.this, R.raw.angrysong);
                 song.start();
+                swap();
             }
         });
         energyButton.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +65,7 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.energetic);
                 song = MediaPlayer.create(InputActivity.this, R.raw.energysong);
                 song.start();
+                swap();
             }
         });
         lonelyButton.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +74,7 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.lonely);
                 song = MediaPlayer.create(InputActivity.this, R.raw.lonelysong);
                 song.start();
+                swap();
             }
         });
         sleepyButton.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +83,7 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.sleepy);
                 song = MediaPlayer.create(InputActivity.this, R.raw.sleepysong);
                 song.start();
+                swap();
             }
         });
         productiveButton.setOnClickListener(new View.OnClickListener() {
@@ -87,6 +92,7 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.productive);
                 song = MediaPlayer.create(InputActivity.this, R.raw.productivesong);
                 song.start();
+                swap();
             }
         });
         sadButton.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +101,7 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.sad);
                 song = MediaPlayer.create(InputActivity.this, R.raw.sadsong);
                 song.start();
+                swap();
             }
         });
         calmButton.setOnClickListener(new View.OnClickListener() {
@@ -103,10 +110,15 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.calm);
                 song = MediaPlayer.create(InputActivity.this, R.raw.calmsong);
                 song.start();
+                swap();
             }
         });
 
 
+    }
+    public void swap() {
+        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 
 }
