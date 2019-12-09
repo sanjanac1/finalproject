@@ -19,26 +19,7 @@ public class InputActivity extends AppCompatActivity {
     private ImageButton productiveButton;
     private ImageButton sadButton;
     private ImageButton calmButton;
-    /**
-    private Button pauseHappy;
-    private Button backHappy;
-    private Button pauseAngry;
-    private Button backAngry;
-    private Button pauseSad;
-    private Button backSad;
-    private Button pauseProductive;
-    private Button backProductive;
-    private Button pauseEnergy;
-    private Button backEnergy;
-    private Button pauseCalm;
-    private Button backCalm;
-    private Button pauseSleepy;
-    private Button backSleepy;
-    private Button pauseLonely;
-    private Button backLonely;
 
-    MediaPlayer song;
-     **/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,24 +35,6 @@ public class InputActivity extends AppCompatActivity {
         sadButton = findViewById(R.id.btnSad);
         calmButton = findViewById(R.id.btnCalm);
 
-        /**
-        pauseHappy = findViewById(R.id.pshappy);
-        backHappy = findViewById(R.id.backHapy);
-        pauseAngry = findViewById(R.id.psangry);
-        backAngry = findViewById(R.id.backAngry);
-        pauseSad = findViewById(R.id.pssad);
-        backSad = findViewById(R.id.backSad);
-        pauseProductive = findViewById(R.id.psproductive);
-        backProductive = findViewById(R.id.backProductive);
-        pauseEnergy = findViewById(R.id.psenergetic);
-        backEnergy = findViewById(R.id.backEnergetic);
-        pauseCalm = findViewById(R.id.psCalm);
-        backCalm = findViewById(R.id.backCalm);
-        pauseSleepy = findViewById(R.id.pssleepy);
-        backSleepy = findViewById(R.id.backSleepy);
-        pauseLonely = findViewById(R.id.pslonely);
-        backLonely = findViewById(R.id.backLonely);
-         **/
 
 
 
@@ -94,6 +57,7 @@ public class InputActivity extends AppCompatActivity {
         energyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setContentView(R.layout.energetic);
                 Intent intent = new Intent(InputActivity.this, EnergeticActivity.class);
                 startActivity(intent);
             }
@@ -101,6 +65,7 @@ public class InputActivity extends AppCompatActivity {
         lonelyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setContentView(R.layout.lonely);
                 Intent intent = new Intent(InputActivity.this, LonelyActivity.class);
                 startActivity(intent);
             }
@@ -108,6 +73,7 @@ public class InputActivity extends AppCompatActivity {
         sleepyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setContentView(R.layout.sleepy);
                 Intent intent = new Intent(InputActivity.this, SleepyActivity.class);
                 startActivity(intent);
             }
@@ -115,6 +81,7 @@ public class InputActivity extends AppCompatActivity {
         productiveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setContentView(R.layout.productive);
                 Intent intent = new Intent(InputActivity.this, ProductiveActivity.class);
                 startActivity(intent);
             }
@@ -122,6 +89,7 @@ public class InputActivity extends AppCompatActivity {
         sadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setContentView(R.layout.sad);
                 Intent intent = new Intent(InputActivity.this, SadActivity.class);
                 startActivity(intent);
             }
@@ -129,12 +97,14 @@ public class InputActivity extends AppCompatActivity {
         calmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setContentView(R.layout.calm);
                 Intent intent = new Intent(InputActivity.this, CalmActivity.class);
                 startActivity(intent);
             }
         });
 
     }
+
 
 
 }
