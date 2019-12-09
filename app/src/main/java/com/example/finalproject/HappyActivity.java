@@ -1,4 +1,6 @@
 package com.example.finalproject;
 
-public class HappyActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class HappyActivity extends AppCompatActivity {
 }
