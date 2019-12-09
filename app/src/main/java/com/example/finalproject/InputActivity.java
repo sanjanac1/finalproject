@@ -19,8 +19,22 @@ public class InputActivity extends AppCompatActivity {
     private ImageButton productiveButton;
     private ImageButton sadButton;
     private ImageButton calmButton;
-    private Button pause;
-    private Button back;
+    private Button pauseHappy;
+    private Button backHappy;
+    private Button pauseAngry;
+    private Button backAngry;
+    private Button pauseSad;
+    private Button backSad;
+    private Button pauseProductive;
+    private Button backProductive;
+    private Button pauseEnergy;
+    private Button backEnergy;
+    private Button pauseCalm;
+    private Button backCalm;
+    private Button pauseSleepy;
+    private Button backSleepy;
+    private Button pauseLonely;
+    private Button backLonely;
 
     MediaPlayer song;
 
@@ -38,6 +52,23 @@ public class InputActivity extends AppCompatActivity {
         sadButton = findViewById(R.id.btnSad);
         calmButton = findViewById(R.id.btnCalm);
 
+        pauseHappy = findViewById(R.id.pshappy);
+        backHappy = findViewById(R.id.backHapy);
+        pauseAngry = findViewById(R.id.psangry);
+        backAngry = findViewById(R.id.backAngry);
+        pauseSad = findViewById(R.id.pssad);
+        backSad = findViewById(R.id.backSad);
+        pauseProductive = findViewById(R.id.psproductive);
+        backProductive = findViewById(R.id.backProductive);
+        pauseEnergy = findViewById(R.id.psenergetic);
+        backEnergy = findViewById(R.id.backEnergetic);
+        pauseCalm = findViewById(R.id.psCalm);
+        backCalm = findViewById(R.id.backCalm);
+        pauseSleepy = findViewById(R.id.pssleepy);
+        backSleepy = findViewById(R.id.backSleepy);
+        pauseLonely = findViewById(R.id.pslonely);
+        backLonely = findViewById(R.id.backLonely);
+
 
 
 
@@ -47,8 +78,26 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.happy);
                 song = MediaPlayer.create(InputActivity.this, R.raw.happysong);
                 song.start();
-                pause = findViewById(R.id.pshappy);
-                back = findViewById(R.id.backHappy);
+                pauseHappy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                backHappy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
 
 
             }
@@ -60,8 +109,27 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.angry);
                 song = MediaPlayer.create(InputActivity.this, R.raw.angrysong);
                 song.start();
-                pause = findViewById(R.id.psangry);
-                back = findViewById(R.id.backAngry);
+                pauseAngry.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                backAngry.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
             }
         });
         energyButton.setOnClickListener(new View.OnClickListener() {
@@ -70,8 +138,27 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.energetic);
                 song = MediaPlayer.create(InputActivity.this, R.raw.energysong);
                 song.start();
-                pause = findViewById(R.id.psenergetic);
-                back = findViewById(R.id.backEnergetic);
+                pauseEnergy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                backEnergy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
             }
         });
         lonelyButton.setOnClickListener(new View.OnClickListener() {
@@ -80,8 +167,27 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.lonely);
                 song = MediaPlayer.create(InputActivity.this, R.raw.lonelysong);
                 song.start();
-                pause = findViewById(R.id.pslonely);
-                back = findViewById(R.id.backLonely);
+                pauseLonely.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                backLonely.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
             }
         });
         sleepyButton.setOnClickListener(new View.OnClickListener() {
@@ -90,8 +196,27 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.sleepy);
                 song = MediaPlayer.create(InputActivity.this, R.raw.sleepysong);
                 song.start();
-                pause = findViewById(R.id.pssleepy);
-                back = findViewById(R.id.backSleepy);
+                pauseSleepy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                backSleepy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
             }
         });
         productiveButton.setOnClickListener(new View.OnClickListener() {
@@ -100,8 +225,27 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.productive);
                 song = MediaPlayer.create(InputActivity.this, R.raw.productivesong);
                 song.start();
-                pause = findViewById(R.id.psproductive);
-                back = findViewById(R.id.backProductive);
+                pauseProductive.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                pauseProductive.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
 
             }
         });
@@ -111,8 +255,27 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.sad);
                 song = MediaPlayer.create(InputActivity.this, R.raw.sadsong);
                 song.start();
-                pause = findViewById(R.id.pssad);
-                back = findViewById(R.id.backSad);
+                pauseSad.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                backSad.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
 
             }
         });
@@ -122,33 +285,30 @@ public class InputActivity extends AppCompatActivity {
                 setContentView(R.layout.calm);
                 song = MediaPlayer.create(InputActivity.this, R.raw.calmsong);
                 song.start();
-                pause = findViewById(R.id.pscalm);
-                back = findViewById(R.id.backCalm);
+                pauseCalm.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (song.isPlaying()) {
+                            song.pause();
+                        } else {
+                            song.start();
+                        }
+
+                    }
+                });
+                backCalm.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        song.stop();
+                        Intent intent = new Intent(InputActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
 
             }
         });
-        pause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (song.isPlaying()) {
-                    song.pause();
-                } else {
-                    song.start();
-                }
-
-            }
-        });
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                song.stop();
-                Intent intent = new Intent(InputActivity.this, MainActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-
 
     }
 

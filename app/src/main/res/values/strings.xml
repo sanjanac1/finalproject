@@ -22,5 +22,6 @@
     <string name="lonely">Lonely</string>
     <string name="pause">PAUSE</string>
     <string name="back">BACK</string>
+    <string name="pause_start">PAUSE START</string>
     <string name="mood_music">Mood Music</string>
 </resources>
