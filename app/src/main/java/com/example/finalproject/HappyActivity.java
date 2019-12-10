@@ -35,7 +35,7 @@ public class HappyActivity extends AppCompatActivity {
 
             }
         });
-        pauseHappy.setOnClickListener(new View.OnClickListener() {
+        backHappy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 song.stop();
